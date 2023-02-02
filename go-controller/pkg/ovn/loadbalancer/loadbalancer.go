@@ -256,6 +256,7 @@ func buildLB(lb *LB) *nbdb.LoadBalancer {
 		"reject":          reject,
 		"event":           event,
 		"skip_snat":       skipSNAT,
+		"neighbor_responder": "none",
 		"hairpin_snat_ip": fmt.Sprintf("%s %s", types.V4OVNServiceHairpinMasqueradeIP, types.V6OVNServiceHairpinMasqueradeIP),
 	}
 
